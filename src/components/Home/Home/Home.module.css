@@ -1,0 +1,65 @@
+.subName {
+  color: orange;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 400;
+  margin: 50px 0 -50px 0;
+}
+
+.name {
+  color: #ccd6f6;
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: 600;
+}
+
+.subTitle {
+  color: #8892b0;
+  font-size: 80px;
+  margin-top: -50px;
+  line-height: 80px;
+  font-weight: 600;
+}
+
+.details {
+  color: #8892b0;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.myButton {
+  font-weight: 600 !important;
+  color: orange !important;
+  width: 220px;
+  height: 50px;
+  background-color: rgba(255, 166, 0, 0) !important;
+  border: 1px solid orange !important;
+  border-radius: 5px !important;
+}
+
+.myButton:hover {
+  color: #0a192f !important;
+  background-color: orange !important;
+}
+
+@media only screen and (max-width: 678px) {
+  .subName {
+    margin-bottom: -25px;
+  }
+  .name {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .subTitle {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+  }
+  .details {
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
+}
