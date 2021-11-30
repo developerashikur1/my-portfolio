@@ -30,11 +30,21 @@
   margin-bottom: 50px;
 }
 
+.anchorBoss {
+  text-decoration: none;
+  color: orange;
+}
+.anchorBoss:hover {
+  text-decoration: none;
+  color: #0a192f;
+}
+
 .myButton {
   font-weight: 600 !important;
   color: orange !important;
   width: 220px;
   height: 50px;
+  font-size: 18px !important;
   background-color: rgba(255, 166, 0, 0) !important;
   border: 1px solid orange !important;
   border-radius: 5px !important;
