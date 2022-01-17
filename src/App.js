@@ -11,9 +11,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<MainHome></MainHome>}>
-        <Route path="/tools" element={<Tools></Tools>}></Route>
-        <Route path="/hosting" element={<Hosting></Hosting>}></Route>
-        <Route path="/web" element={<WebDevelopment></WebDevelopment>}></Route>
+          <Route path="/tools" element={<Tools></Tools>}></Route>
+          <Route path="/hosting" element={<Hosting></Hosting>}></Route>
+          <Route path="/" element={<WebDevelopment></WebDevelopment>}></Route>
         </Route>
         <Route path="/mainHome" element={<MainHome></MainHome>}>
         </Route>

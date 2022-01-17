@@ -1,11 +1,12 @@
-import { Button, Container, Grid, Typography } from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
 import React from 'react';
 import styles from './About.module.css'
-
+import Fade from 'react-reveal/Fade';
 const About = () => {
     const aboutImage = 'https://i.ibb.co/0DWQPXd/developer.png';
     return (
         <div className={styles.totalAbout}>
+         <Fade bottom cascade>
             <Grid container rowSpacing={1} columnSpacing={{ xs: 5, sm: 2, md: 3 }}>
                 <Grid className={styles.mainSection} item xs={12} sm={8} md={7}>
                     <Typography className={styles.about} variant="h4">
@@ -26,6 +27,7 @@ I like to develop expertise in a number of areas over the course of my life and 
                     </div>
                 </Grid>
             </Grid>
+            </Fade>
         </div>
     );
 };

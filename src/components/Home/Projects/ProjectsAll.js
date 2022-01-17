@@ -2,7 +2,7 @@ import { Button, Grid, Paper, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import styles from './ProjectsAll.module.css'
-
+import Fade from 'react-reveal/Fade';
 
 
 const ProjectsAll = () => {
@@ -25,11 +25,12 @@ const ProjectsAll = () => {
 ]
     return (
         <div style={{marginTop:'80px'}}>
+         <Fade bottom cascade>
             <Grid container rowSpacing={8} style={{display:'flex', alignItems:'center'}} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
 
                 {/* divided 1 */}
                 <Grid className={styles.first} item xs={12} md={7} style={{zIndex:1, marginRight:'-100px'}}>
-                    <img style={{width:'100%', filter:'brightness(50%)', backgroundColor: 'rgba(0,0,0,0.5)'}} src={projects[0]?.img} alt="" />
+                    <img style={{width:'100%', filter:'brightness(50%)', backgroundColor: 'rgba(0,0,0,0.5)'}} src={projects[0].img} alt="" />
                 </Grid>
 
                 <Grid className={styles.second} item xs={12} md={6} style={{textAlign:'right', zIndex:2}}>
@@ -47,8 +48,9 @@ const ProjectsAll = () => {
                     <a
                         className={styles.anchorBoss}
                         href="https://doctors-care-12ac7.web.app/"
+                        target="_blank"
                         >
-                            <Button className={styles.myButton}><i class="fas fa-external-link-alt"></i> &nbsp; Visit Now</Button>
+                            <Button className={styles.myButton}><i className="fas fa-external-link-alt"></i> &nbsp; Visit Now</Button>
             
                     </a>
                     
@@ -71,19 +73,20 @@ const ProjectsAll = () => {
                     <a
                         className={styles.anchorBoss}
                         href="https://doctors-care-12ac7.web.app/"
+                        target="_blank"
                         >
-                            <Button className={styles.myButton}><i class="fas fa-external-link-alt"></i> &nbsp; Visit Now</Button>
+                            <Button className={styles.myButton}><i className="fas fa-external-link-alt"></i> &nbsp; Visit Now</Button>
             
                     </a>
                 </Grid>
                 <Grid className={styles.fourth} item xs={12} md={7} style={{zIndex:1}}>
-                    <img style={{width:'100%', filter:'brightness(50%)', backgroundColor: 'rgba(0,0,0,0.5)'}} src={projects[1]?.img} alt="" />
+                    <img style={{width:'100%', filter:'brightness(50%)', backgroundColor: 'rgba(0,0,0,0.5)'}} src={projects[1].img} alt="" />
                 </Grid>
 
 {/* divided 3 */}
 
                 <Grid className={styles.fifth} item xs={12} md={7} style={{zIndex:1, marginRight:'-100px'}}>
-                    <img style={{width:'100%', filter:'brightness(50%)', backgroundColor: 'rgba(0,0,0,0.5)'}} src={projects[2]?.img} alt="" />
+                    <img style={{width:'100%', filter:'brightness(50%)', backgroundColor: 'rgba(0,0,0,0.5)'}} src={projects[2].img} alt="" />
                 </Grid>
 
                 <Grid className={styles.sixth} item xs={12} md={6} style={{textAlign:'right', zIndex:2}}>
@@ -100,8 +103,9 @@ const ProjectsAll = () => {
                     <a
                         className={styles.anchorBoss}
                         href="https://doctors-care-12ac7.web.app/"
+                        target="_blank"
                         >
-                            <Button className={styles.myButton}><i class="fas fa-external-link-alt"></i> &nbsp; Visit Now</Button>
+                            <Button className={styles.myButton}><i className="fas fa-external-link-alt"></i> &nbsp; Visit Now</Button>
             
                     </a>
                 </Grid>
@@ -109,6 +113,7 @@ const ProjectsAll = () => {
             <Grid style={{textAlign:'center', marginTop:'70px'}}>
                     <Button className={styles.myButton}>More Projects</Button>
             </Grid>
+            </Fade>
         </div>
     );
 };

@@ -2,7 +2,6 @@ import { Grid } from '@mui/material';
 import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
@@ -20,14 +19,13 @@ const Hosting = () => {
             <Grid container spacing={{ xs: 2, md: 3 }}>
                 {webImages.map((index) => (
                     <Grid item xs={6} sm={4} md={2} key={index}>
-                    <Card sx={{ maxWidth: 345, backgroundColor:'#ccd6f6' }}>
+                    <Card sx={{ maxWidth: 345, backgroundColor:'#ccd6f6', textAlign:'center' }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="150"
-          image={index.img}
-          alt="green iguana"
-        />
+      <div style={{padding: '15px'}}>
+        <img 
+        style={{height:'65px', padding:'10px'}}
+        src={index.img} alt=""/>
+        </div>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {index.name}
